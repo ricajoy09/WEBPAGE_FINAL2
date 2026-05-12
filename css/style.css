@@ -43,7 +43,7 @@ header{
     color: white;
     font-weight: 800;
     cursor: pointer;
-    transition: 0.5 ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .logo:hover{
@@ -65,35 +65,7 @@ nav a.active{
     border-bottom: 3px solid palevioletred;
 }
 
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid palevioletred;
-        border-bottom: 3px solid palevioletred;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: rgb(180, 75, 93);
-        border-top: 0.1rem solid rgb(172, 87, 101);
-    }
 
-    nav.active{
-        display: block;
-    }
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5 rem;
-        border-bottom: 0.5 solid palevioletred;
-    }
-}
 
 section{
     min-height: 100vh;
@@ -144,14 +116,7 @@ span{
     position: relative;
     width: 45vw;
     height: auto;
-    box-shadow: 0 0 25 px solid palevioletred;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
+    cursor: default;
 }
 
 .social-icons {
@@ -256,3 +221,70 @@ span{
     margin-bottom: 30px;
 }
 
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        background-color: rgb(180, 75, 93);
+        border-top: 0.1rem solid rgb(172, 87, 101);
+        text-align: center;
+    }
+
+    nav.active{
+        display: block;
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5 rem;
+        border-bottom: 0.5 solid palevioletred;
+    }
+    .home-content{
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+    }
+    .home-img{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .home-img img{
+        width: 500px;
+    }
+}
+
+@media(max-width:450px){
+    .home-img{
+        position: absolute;
+        top: -140px;
+        left: -130px;
+    }
+    .home-img img{
+        width: 500px;
+    }
+}
+
+@media(max-width:370px){
+    .home-img{
+        position: absolute;
+        top: 0%;
+        left: -50px;
+    }
+    .home-img img{
+        width: 300px;
+    }
+    .logo{
+        font-size: 2.5rem;
+    }
+    .home-content{
+        margin: 30px;
+    }
+}
