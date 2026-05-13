@@ -1,7 +1,9 @@
+body{
+    background: palevioletred;
+    color: #ffffff;
+}
 .education {
     padding: 50px;
-    background: palevioletred;
-    color: #fff;
     text-align: center;
 }
 

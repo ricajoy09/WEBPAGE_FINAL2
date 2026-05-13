@@ -1,0 +1,48 @@
+body{
+    background: palevioletred;
+    color: #ffffff;
+}
+
+.games-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.games{
+    background: rgb(104, 40, 61);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.games:hover {
+    background: rgb(151, 30, 70);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.games img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.btn{
+    background-color: white;
+    color: palevioletred;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
